@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>Sami Khan - Portfolio</title>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Scroll To Top Button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <header>
+        <a href="#" class="logo">Sami Khan</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Theme & Language Controls -->
+        <div class="controls-container">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Added Soon</option>
+                </select>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+
+            <!-- Theme Selector Button -->
+            <div class="theme-selector-toggle">
+                <i class="fas fa-palette"></i>
+            </div>
+        </div>
+        
+        <div class="mobile-nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Theme Settings Panel -->
+    <div class="theme-settings">
+        <div class="theme-header">
+            <h3>Theme Settings</h3>
+            <span class="close-theme-settings"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="theme-mode">
+            <h4>Mode</h4>
+            <div class="theme-options">
+                <div class="theme-option" data-mode="dark">
+                    <div class="option-preview dark"></div>
+                    <span>Dark</span>
+                </div>
+                <div class="theme-option" data-mode="light">
+                    <div class="option-preview light"></div>
+                    <span>Light</span>
+                </div>
+            </div>
+        </div>
+        <div class="accent-color">
+            <h4>Accent Color</h4>
+            <div class="color-options">
+                <div class="color-option" data-color="#b74b4b" style="background-color: #b74b4b;"></div>
+                <div class="color-option" data-color="#4b8bb7" style="background-color: #4b8bb7;"></div>
+                <div class="color-option" data-color="#4bb76e" style="background-color: #4bb76e;"></div>
+                <div class="color-option" data-color="#b74b9f" style="background-color: #b74b9f;"></div>
+                <div class="color-option" data-color="#b7964b" style="background-color: #b7964b;"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="home">
+        <div class="home-img" data-aos="fade-left" data-aos-delay="300">
+            <img src="Image Assets/Profile Picture.jpg">
+        </div>
+        <div class="home-content" data-aos="fade-right" data-aos-delay="300">
+            <h1>Hi, I'm <span>Sami Khan</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>B-Tech CSE Core Student at Vellore Institute of Technology</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 7505021350</p>
+                <p><i class="fas fa-envelope"></i> ksami6978@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Etawah, Uttar Pradesh</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/itssamikhan" data-aos="fade-up" data-aos-delay="400"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/its-SamiKhan" data-aos="fade-up" data-aos-delay="500"><i class="fa-brands fa-github"></i></a>
+                <!--<a href="#" data-aos="fade-up" data-aos-delay="600"><i class="fa-brands fa-twitter"></i></a>-->
+                <a href="https://www.instagram.com/its_samikhan_" data-aos="fade-up" data-aos-delay="700"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="800">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="heading" data-aos="fade-up">About Me</h2>
+        <div class="about-content" data-aos="fade-up" data-aos-delay="300">
+            <p style="font-size: 15px;">I am a passionate and driven Computer Science Engineering student at Vellore Institute of Technology, Bhopal, specializing in AI, Data Science, and Software Development. With a strong foundation in programming (C, C++, Python, Java) and hands-on experience in machine learning models, computer vision, and web development, I aim to apply my technical expertise to solve real-world problems..</p>
+            <br>
+            <p style="font-size: 15px;">Throughout my academic journey, I have developed innovative projects such as a YOLO-based footfall tracking system and a smart attendance solution using facial recognition, showcasing my ability to integrate technology with impactful applications.</p>
+            <br>
+            <p style="font-size: 15px;">Eager to collaborate on cutting-edge projects and contribute to meaningful technological advancements, I am continuously expanding my skills in emerging technologies while maintaining a strong commitment to learning, adaptability, and problem-solving.</p>
+            <br>
+            <p style="font-size: 15px;">I am actively seeking opportunities to work on research-driven initiatives, internships, or collaborative projects where I can grow and make a positive impact.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="heading" data-aos="fade-up">My Skills</h2>
+        
+        <div class="skills-category" data-aos="fade-up">
+            <h1>Technical Skills</h1><br>
+            <div class="skills-container">
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="300">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="500">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="700">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>YOLO Integration</span>
+                        <span>OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="900">
+                    <h3>Libraries & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>OpenCV</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="skills-category" data-aos="fade-up">
+            <h1>Soft Skills</h1 >
+            <div class="skills-container">
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="300">
+                    <h3>Problem-Solving & Analytical Thinking</h3>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="500">
+                    <h3>Team Collaboration</h3>
+                </div>
+                <div class="skill-box" data-aos="fade-right" data-aos-delay="700">
+                    <h3>Adaptability & Quick Learning</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with 3D Flip Cards -->
+    <section id="projects" class="projects">
+        <h2 class="heading" data-aos="fade-up">My Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Image Assets/Buzz n' Play.png" alt="Buzz n' Play">
+                        <h3 style="text-align: center;">Buzz n' Play</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Buzz n' Play</h3>
+                        <p>Designed an interactive gaming site inspired by bees, featuring fun games and hidden bee facts.</p>
+                        <p>Includes 12 mini retro games embedded within modern bee-shaped flyouts.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://buzz-n-play.netlify.app"><i class="fas fa-eye"></i> Preview</a>
+                            <a href="https://github.com/its-SamiKhan/Buzz-n-Play"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Image Assets/Background Remover.png" alt="Background Remover">
+                        <h3 style="text-align: center;">Background Remover</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Background Remover</h3>
+                        <p>Developed an API for background removal to enhance image processing capabilities.</p>
+                        <p>Enables easy image extraction at no cost.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ai-backgroundremover.netlify.app"><i class="fas fa-eye"></i> Preview</a>
+                            <a href="https://github.com/its-SamiKhan/Background-Remover"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Image Assets/Footfall Tracker.png" alt="Footfall Tracker">
+                        <h3 style="text-align: center;">Footfall Tracker</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Footfall Tracker</h3>
+                        <p>Uses YOLO model training, OpenCV, and Pandas to detect and count people in a given area.</p>
+                        <p>Displays analytics and real-time heatmaps on a locally hosted HTML page.</p>
+                        <div class="project-tech">
+                            <span>YOLO Model</span>
+                            <span>OpenCV</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+                            <a href="https://github.com/its-SamiKhan/Footfall-Tracker"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="900">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Image Assets/Smart Attendance System.png" alt="Smart Attendance System">
+                        <h3 style="text-align: center;">Smart Attendance System</h3>
+                    </div>
+                    <div class="card-back">
+                        <h3>Smart Attendance System</h3>
+                        <p>Leverages OpenCV and facial recognition to automate attendance tracking.</p>
+                        <p>Enhances efficiency with real-time facial identification.</p>
+                        <div class="project-tech">
+                            <span>OpenCV</span>
+                            <span>Facial Recognition</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-eye"></i> Preview</a>
+                            <a href="https://github.com/its-SamiKhan/Smart-Attendance-System"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="heading" data-aos="fade-up">Education</h2>
+        <div class="education-container">
+            <div class="education-box" data-aos="flip-left">
+                <div class="education-content">
+                    <div class="content">
+                        <h3>B-Tech in Computer Science and Technology</h3>
+                        <p>Vellore Institute of Technology, Bhopal Campus, Sehore</p>
+                        <p>2023 - Ongoing</p>
+                        <p class="highlight">CGPA: 8.09 till 4th sem overall</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-box" data-aos="flip-left" data-aos-delay="300">
+                <div class="education-content">
+                    <div class="content">
+                        <h3>Senior Secondary (XII)</h3>
+                        <p>Gyan Sthali Residential School, Karwa Khera, Etawah</p>
+                        <p>2022</p>
+                        <p class="highlight">Percentage: 80.2%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-box" data-aos="flip-left" data-aos-delay="600">
+                <div class="education-content">
+                    <div class="content">
+                        <h3>Secondary (X)</h3>
+                        <p>Gyan Sthali Residential School, Karwa Khera, Etawah</p>
+                        <p>2020</p>
+                        <p class="highlight">Percentage: 88.5%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <h2 class="heading" data-aos="fade-up">Certificates & Achievements</h2>
+        <div class="certificates-container">
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="certificate-img">
+                    <img src="Image Assets/Dev Folio Certificate.png" alt="Frontend Developer Badge">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Dev Folio Certificate.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Frontend Developer Badge</h3>
+                    <p>Devfolio</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="certificate-img">
+                    <img src="Image Assets/C for Beginners Certificate.jpg" alt="C for Beginners Certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/C for Beginners Certificate.jpg" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>C for Beginners Certificate</h3>
+                    <p>Great Learning</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="500">
+                <div class="certificate-img">
+                    <img src="Image Assets/Basics of Programming Certificate.jpg" alt="Basics of Programming Certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Basics of Programming Certificate.jpg" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Basics of Programming Certificate</h3>
+                    <p>Great Learning</p>
+                </div>
+            </div>
+            
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="600">
+                <div class="certificate-img">
+                    <img src="Image Assets/Front End Development-HTML Certificate.jpg" alt="FrontEnd Development (HTML) Certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Front End Development-HTML Certificate.jpg" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>FrontEnd Development (HTML) Certificate</h3>
+                    <p>Great Learning</p>
+                </div>
+            </div>
+            
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="700">
+                <div class="certificate-img">
+                    <img src="Image Assets/HTML and CSS Bootcamp.jpg" alt="HTML and CSS Bootcamp Certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/HTML and CSS Bootcamp.jpg" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>HTML and CSS Bootcamp Certificate</h3>
+                    <p>LetsUpgrade</p>
+                </div>
+            </div>
+            
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="800">
+                <div class="certificate-img">
+                    <img src="Image Assets/Python Certificate.png" alt="Python Certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Python Certificate.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Python Bootcamp Certificate</h3>
+                    <p>LetsUpgrade</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="700">
+                <div class="certificate-img">
+                    <img src="Image Assets/MATLAB Onramp.png" alt="MATLAB Onramp">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/MATLAB Onramp.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>MATLAB Onramp</h3>
+                    <p>MathWorks-Training Services</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="700">
+                <div class="certificate-img">
+                    <img src="Image Assets/Fundamentals of AI ML certificate.png" alt="Fundamentals of AI ML certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Fundamentals of AI ML certificate.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Fundamentals of AI ML Certificate</h3>
+                    <p>VITYarthi</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="700">
+                <div class="certificate-img">
+                    <img src="Image Assets/Python Essentials certificate.png" alt="Python Essentials certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Python Essentials certificate.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Python Essentials Certificate</h3>
+                    <p>VITYarthi</p>
+                </div>
+            </div>
+
+            <div class="certificate-box" data-aos="fade-up" data-aos-delay="700">
+                <div class="certificate-img">
+                    <img src="Image Assets/Programming in Java certificate.png" alt="Programming in Java certificate">
+                    <div class="certificate-overlay">
+                        <a href="Image Assets/Programming in Java certificate.png" class="certificate-link">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <h3>Programming in Java Certificate</h3>
+                    <p>VITYarthi</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="heading" data-aos="fade-up">Contact Me</h2>
+        <div class="contact-container" data-aos="fade-up">
+            <div class="contact-info-box">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>7505021350</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>ksami6978@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Etawah, Uttar Pradesh</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/itssamikhan"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/its-SamiKhan"><i class="fab fa-github"></i></a>
+                    <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                    <a href="https://www.instagram.com/its_samikhan_"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form action="#" data-aos="fade-up" data-aos-delay="300">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content" data-aos="fade-up">
+            <div class="footer-info">
+                <h3>Sami Khan</h3>
+                <p>B-Tech CSE Core Student at Vellore Institute of Technology with a passion for AI, Data Science, and Research.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Me</h3>
+                <p><i class="fas fa-envelope"></i> ksami6978@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 7505021350</p>
+                <p><i class="fas fa-map-marker-alt"></i> Etawah, Uttar Pradesh</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sami Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CV Download Button -->
+    <div class="cv-download" data-aos="zoom-in-left">
+        <a href="Image Assets/Resume-SamiKhan.pdf" download class="btn">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
