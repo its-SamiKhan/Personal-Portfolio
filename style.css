@@ -218,9 +218,7 @@ section:not(.home) {
 
 /* Container backgrounds for better content readability */
 .experience-box,
-.certificate-box,
-.project-card .card-front,
-.project-card .card-back {
+.certificate-box {
     background-color: var(--card-color) !important;
 }
 
@@ -735,7 +733,8 @@ span {
 
 .skill-box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px var(--main-color);
+    border-color: var(--main-color);
 }
 
 .skill-box h3 {
@@ -797,6 +796,7 @@ span {
 .experience-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 20px var(--main-color);
+    border-color: var(--main-color);
 }
 
 .education-content h3 {
@@ -1438,10 +1438,20 @@ textarea {
     border-radius: var(--border-radius);
     overflow: hidden;
     padding: 2rem;
-    background-color: var(--card-color);
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+}
+
+.project-card:hover .card-front,
+.project-card:hover .card-back {
+    border-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
 }
 
 .card-back {
