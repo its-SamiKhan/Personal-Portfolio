@@ -682,6 +682,217 @@ span {
     }
 }
 
+/* Meteor Animation */
+.meteor-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+    /* Make sure it doesn't interfere with clicks */
+}
+
+.stars,
+.stars-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    border-radius: 50%;
+    will-change: opacity;
+}
+
+.stars {
+    box-shadow:
+        15vw 10vh rgba(255, 255, 255, 0.8),
+        35vw 25vh rgba(255, 255, 255, 0.6),
+        55vw 15vh rgba(255, 255, 255, 0.7),
+        75vw 35vh rgba(255, 255, 255, 0.5),
+        25vw 55vh rgba(255, 255, 255, 0.8),
+        45vw 75vh rgba(255, 255, 255, 0.6),
+        65vw 50vh rgba(255, 255, 255, 0.9),
+        85vw 65vh rgba(255, 255, 255, 0.7),
+        10vw 80vh rgba(255, 255, 255, 0.5),
+        90vw 10vh rgba(255, 255, 255, 0.8),
+        5vw 40vh rgba(255, 255, 255, 0.6),
+        95vw 85vh rgba(255, 255, 255, 0.7),
+        50vw 90vh rgba(255, 255, 255, 0.8);
+    animation: twinkle-stars 7s infinite alternate ease-in-out;
+}
+
+.stars-2 {
+    box-shadow:
+        20vw 15vh rgba(255, 255, 255, 0.6),
+        40vw 10vh rgba(255, 255, 255, 0.8),
+        80vw 25vh rgba(255, 255, 255, 0.7),
+        60vw 65vh rgba(255, 255, 255, 0.5),
+        30vw 80vh rgba(255, 255, 255, 0.9),
+        70vw 85vh rgba(255, 255, 255, 0.6),
+        85vw 45vh rgba(255, 255, 255, 0.8),
+        12vw 60vh rgba(255, 255, 255, 0.7),
+        92vw 30vh rgba(255, 255, 255, 0.5),
+        42vw 35vh rgba(255, 255, 255, 0.8),
+        75vw 60vh rgba(255, 255, 255, 0.7),
+        25vw 35vh rgba(255, 255, 255, 0.6),
+        55vw 95vh rgba(255, 255, 255, 0.8),
+        98vw 55vh rgba(255, 255, 255, 0.7),
+        5vw 20vh rgba(255, 255, 255, 0.5);
+    animation: twinkle-stars 11s infinite alternate ease-in-out;
+    animation-delay: -3s;
+}
+
+@keyframes twinkle-stars {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.meteor {
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+    opacity: 0;
+    transform: rotate(45deg);
+    animation: meteor-shower 6s infinite linear;
+    will-change: transform, opacity;
+}
+
+.meteor::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    bottom: -1px;
+    left: -1px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes meteor-shower {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translateY(-200px);
+    }
+
+    10% {
+        opacity: 0.9;
+        /* Higher intensity */
+    }
+
+    30% {
+        opacity: 0;
+        transform: rotate(45deg) translateY(1200px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translateY(1200px);
+    }
+}
+
+/* Randomize Meteor Starts for a widespread, subtle feel */
+.meteor:nth-child(1) {
+    top: -10%;
+    left: 10vw;
+    animation-delay: 0s;
+    animation-duration: 13s;
+}
+
+.meteor:nth-child(2) {
+    top: 5%;
+    left: 40vw;
+    animation-delay: 1.5s;
+    animation-duration: 15s;
+}
+
+.meteor:nth-child(3) {
+    top: -20%;
+    left: 70vw;
+    animation-delay: 0.5s;
+    animation-duration: 12s;
+}
+
+.meteor:nth-child(4) {
+    top: 30%;
+    left: -5vw;
+    animation-delay: 3s;
+    animation-duration: 16s;
+}
+
+.meteor:nth-child(5) {
+    top: 20%;
+    left: 50vw;
+    animation-delay: 2s;
+    animation-duration: 14s;
+}
+
+.meteor:nth-child(6) {
+    top: 10%;
+    left: 85vw;
+    animation-delay: 1s;
+    animation-duration: 13.5s;
+}
+
+.meteor:nth-child(7) {
+    top: 60%;
+    left: 15vw;
+    animation-delay: 4s;
+    animation-duration: 15s;
+}
+
+.meteor:nth-child(8) {
+    top: 50%;
+    left: 60vw;
+    animation-delay: 2.5s;
+    animation-duration: 12.8s;
+}
+
+.meteor:nth-child(9) {
+    top: 35%;
+    left: 90vw;
+    animation-delay: 5s;
+    animation-duration: 14.5s;
+}
+
+.meteor:nth-child(10) {
+    top: -5%;
+    left: 25vw;
+    animation-delay: 3.2s;
+    animation-duration: 13.8s;
+}
+
+.meteor:nth-child(11) {
+    top: 80%;
+    left: 40vw;
+    animation-delay: 0.8s;
+    animation-duration: 15.2s;
+}
+
+.meteor:nth-child(12) {
+    top: 65%;
+    left: 80vw;
+    animation-delay: 2.7s;
+    animation-duration: 12.2s;
+}
+
+.home-content,
+.home-img {
+    position: relative;
+    z-index: 1;
+    /* Make sure text appears above the meteors */
+}
+
 /* Theme Toggle */
 .theme-toggle {
     font-size: 2.2rem;
@@ -797,6 +1008,46 @@ span {
     transform: translateY(-10px);
     box-shadow: 0 0 20px var(--main-color);
     border-color: var(--main-color);
+}
+
+.exp-img {
+    width: 30%;
+    min-width: 250px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.gallery-right .collage-img {
+    height: calc(50% - 0.75rem);
+}
+
+.collage-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+@media(max-width: 768px) {
+    .experience-gallery {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .gallery-right {
+        flex-direction: row;
+    }
+
+    .gallery-right .collage-img {
+        height: 180px;
+        width: calc(50% - 0.75rem);
+    }
+
+    .gallery-left .collage-img {
+        height: 250px;
+    }
 }
 
 .education-content h3 {
@@ -1094,12 +1345,24 @@ textarea {
 .cv-download .btn {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    gap: 0.8rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    box-shadow: none;
+}
+
+.cv-download .btn:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    box-shadow: 0 0 15px var(--main-color), inset 0 0 8px rgba(var(--main-color-rgb), 0.5);
+    background-color: transparent;
 }
 
 .cv-download .btn i {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 /* Animations */
