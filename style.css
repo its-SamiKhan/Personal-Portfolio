@@ -1025,6 +1025,260 @@ span {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+/* ==========================================================================
+   EVEN EXPERIENCE SECTION LAYOUT
+   ========================================================================== */
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid var(--main-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(var(--main-color-rgb), 0.5);
+    border-left-color: var(--main-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(var(--main-color-rgb), 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-role {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.experience-company {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.experience-date {
+    background: rgba(var(--main-color-rgb), 0.12);
+    color: var(--main-color);
+    border: 1px solid rgba(var(--main-color-rgb), 0.3);
+    padding: 0.5rem 1.4rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    white-space: nowrap;
+}
+
+.experience-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.experience-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.experience-desc {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.experience-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.highlight-group h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.experience-bullets {
+    list-style: none;
+    padding-left: 0.2rem;
+}
+
+.experience-bullets li {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.85;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.experience-bullets li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--text-color);
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(var(--main-color-rgb), 0.2);
+    border-color: var(--main-color);
+    color: #fff;
+}
+
+.experience-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cert-preview-card {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 2px solid rgba(var(--main-color-rgb), 0.4);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.cert-preview-card:hover {
+    border-color: var(--main-color);
+    box-shadow: 0 12px 30px rgba(var(--main-color-rgb), 0.4);
+    transform: scale(1.02);
+}
+
+.cert-img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    padding: 0.5rem;
+    background: #fff;
+}
+
+.cert-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(2px);
+}
+
+.cert-preview-card:hover .cert-overlay {
+    opacity: 1;
+}
+
+.experience-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.experience-btn {
+    padding: 0.9rem 2rem !important;
+    font-size: 1.3rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    border-radius: 0.6rem !important;
+    background: var(--main-color) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.experience-btn:hover {
+    box-shadow: 0 0 15px var(--main-color) !important;
+    transform: translateY(-2px) !important;
+}
+
+@media (max-width: 900px) {
+    .experience-grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .experience-media {
+        margin-top: 1rem;
+    }
+    .cert-preview-card {
+        max-width: 100%;
+    }
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .gallery-right .collage-img {
     height: calc(50% - 0.75rem);
 }
